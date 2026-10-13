@@ -1,8 +1,9 @@
 <!doctype html>
-<html lang="zh-Hant">
+<html lang="zh-Hant" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
 <title>循環經濟實作平台</title>
 <meta name="description" content="ISO 59004 循環經濟報告書分組練習平台（Google Sheet 資料庫版）">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -991,7 +992,7 @@ const defaultAdmin = () => { const salt = "cebs-" + ADMIN; return { account: ADM
 /* ---------- Google Sheet 資料庫連線設定 ----------
    部署 Apps Script 網頁應用程式後，把網址貼在 SHEET_API_URL（所有使用者自動連線），
    或由管理員在「帳號權限」頁的「資料庫連線設定」貼上（只對該瀏覽器有效）。 */
-const SHEET_API_URL = "";   // 例："https://script.google.com/macros/s/AKfycb.../exec"
+const SHEET_API_URL = "https://script.google.com/macros/s/AKfycbwmLbxgAnAbwe2EVwVG16Y-70_1ZdDYAYVUb8fkbFfhjMMwCJ2rfR_yokRJqzV2VvA1/exec";
 const SHEET_API_KEY = "";   // 選填：須與 Apps Script 程式碼的 API_KEY 相同
 const POLL_MS = 8000;       // 每 8 秒檢查一次其他人的修改
 function apiCfg() {
